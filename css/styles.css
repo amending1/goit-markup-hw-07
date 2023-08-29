@@ -115,6 +115,16 @@ header {
 	border-bottom: 1px solid #e7e9fc;
 }
 
+.logo {
+	color: var(--primary-brand, #4d5ae5);
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.17;
+	letter-spacing: 0.54px;
+	text-transform: uppercase;
+}
+
 .address-link-phone {
 	color: var(--primary-brand);
 	font-family: Roboto;
@@ -332,6 +342,9 @@ header {
 	}
 }
 
+/* Hero - SECTION */
+
+/* Hero - MOBILE */
 .main-order-service {
 	background-image: linear-gradient(
 			var(--hero-background, rgba(46, 47, 66, 0.7)),
@@ -382,6 +395,7 @@ header {
 	background: var(--pressed-state, #404bbf);
 }
 
+/* Modal - SECTION */
 .modal {
 	position: fixed;
 	top: 0;
@@ -618,6 +632,9 @@ header {
 	margin-top: 24px;
 }
 
+/* Values - SECTION */
+
+/* Values - MOBILE */
 .main-content {
 	padding: 96px 0;
 }
@@ -630,18 +647,45 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 72px 24px;
+	justify-content: center;
 }
 
 .main-content-values > li {
 	width: 356px;
 }
 
+.main-content-list {
+	color: var(--dark, #2e2f42);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.11;
+	letter-spacing: 0.72px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.main-content-items {
+	color: var(--text, #434455);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+}
+
+/*Values - TABLET */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.main-content-icons {
 		display: none;
 	}
+
+	.main-content-list {
+		text-align: left;
+	}
 }
 
+/*Values - LAPTOP */
 @media screen and (min-width: 1200px) {
 	.heading-hidden {
 		visibility: hidden;
@@ -674,21 +718,7 @@ header {
 		width: 64px;
 		height: 64px;
 	}
-}
 
-.main-content-list {
-	color: var(--dark, #2e2f42);
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 111, 111%;
-	letter-spacing: 0.72px;
-	margin-bottom: 8px;
-	margin-top: 8px;
-	text-transform: capitalize;
-	text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
 	.main-content-list {
 		font-size: 20px;
 		font-weight: 500;
@@ -696,17 +726,7 @@ header {
 		letter-spacing: 0.4px;
 		text-align: left;
 	}
-}
 
-.main-content-items {
-	color: var(--text, #434455);
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.5;
-	letter-spacing: 0.32px;
-}
-
-@media screen and (min-width: 1200px) {
 	.main-content-items {
 		font-size: 16px;
 		font-weight: 400;
@@ -717,23 +737,28 @@ header {
 
 /* What are we doing SECTION */
 
-.main-content-photos,
-.main-content-images {
-	display:none;
+/* What are we doing - MOBILE - TABLET */
+
+@media screen and (max-width: 1199px) {
+	.main-content-photos,
+	.main-content-images {
+		display: none;
+	}
 }
 
+/* What are we doing - LAPTOP */
 @media screen and (min-width: 1200px) {
-.main-content-photos {
-	padding-bottom: 120px;
-}
+	.main-content-photos {
+		padding-bottom: 120px;
+	}
 
-.main-content-images {
-	display: flex;
-	justify-content: space-between;
-	gap: 24px;
-	margin: 0;
-	width: calc(100% - 3 * 24px) / 3;
-}
+	.main-content-images {
+		display: flex;
+		justify-content: space-between;
+		gap: 24px;
+		margin: 0;
+		width: calc(100% - 3 * 24px) / 3;
+	}
 }
 
 /* Main team SECTION*/
@@ -822,6 +847,7 @@ header {
 	display: flex;
 	gap: 24px;
 }
+
 /* Main team - TABLET */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.main-team-card {
@@ -839,6 +865,8 @@ header {
 }
 
 /* Customers SECTION */
+
+/* Customers - MOBILE - TABLET - LAPTOP*/
 
 .heading {
 	color: var(--dark, #2e2f42);
@@ -877,6 +905,8 @@ header {
 }
 
 /* Footer SECTION */
+
+/* Footer - MOBILE */
 .footer-wrapper {
 	background-color: var(--dark, #2e2f42);
 	padding: 100px 0;
@@ -898,7 +928,9 @@ header {
 	line-height: 1.17;
 	letter-spacing: 0.54px;
 	text-transform: uppercase;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 16px;
 }
 
@@ -911,11 +943,6 @@ header {
 	line-height: 1.5;
 	letter-spacing: 0.32px;
 }
-
-.footer-media {
-	
-}
-
 
 .footer-media-text {
 	color: var(--white-background, #fff);
@@ -963,10 +990,6 @@ header {
 	background-color: var(--success, #31d0aa);
 }
 
-.footer-subscribe {
-
-}
-
 .footer-field-wrapper {
 	text-align: center;
 }
@@ -978,7 +1001,6 @@ header {
 	border: 1px solid var(--white-background);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	background-color: var(--dark);
-
 }
 
 .footer-input {
@@ -1016,6 +1038,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
+	margin: 0 auto;
 }
 
 .footer-subscribe-icon {
@@ -1025,9 +1048,47 @@ header {
 
 /*Footer -  TABLET */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.footer-adjust {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		row-gap: 72px;
+		column-gap: 24px;
+		max-width: 550px;
+	}
+
+	.logo-footer {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.footer-media-text {
+		text-align: left;
+	}
+}
+
+/* Footer - TABLET - LAPTOP */
+@media screen and (min-width: 768px) {
+	.footer-field-wrapper {
+		display: flex;
+		gap: 24px;
+	}
+}
 
 /* Footer - LAPTOP */
 @media screen and (min-width: 1200px) {
+	.footer-media {
+		margin-left: 120px;
+		margin-right: 80px;
+	}
+
+	.footer-media-text {
+		text-align: left;
+	}
+
+	.logo-footer {
+		justify-content: flex-start;
+}
 
 /* Portfolio SECTION */
 
@@ -1097,16 +1158,6 @@ header {
 	line-height: 1.5;
 	letter-spacing: 0.32px;
 	margin-top: 8px;
-}
-
-.logo {
-	color: var(--primary-brand, #4d5ae5);
-	font-family: Raleway;
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 1.17;
-	letter-spacing: 0.54px;
-	text-transform: uppercase;
 }
 
 .section-portfolio-wrapper {
