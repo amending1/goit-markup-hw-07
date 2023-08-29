@@ -166,7 +166,8 @@ header {
 }
 
 .nav-button-item {
-	fill: var(--dark);
+	stroke: var(--dark);
+	stroke-width: 3px;
 	width: 20px;
 	height: 20px;
 }
@@ -359,6 +360,15 @@ header {
 	max-width: 1440px;
 	height: 600px;
 	margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('../images/people-office2x.jpg');
+  }
 }
 
 .main-order-service-text {
